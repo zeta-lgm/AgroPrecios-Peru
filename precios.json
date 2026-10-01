@@ -1,0 +1,72 @@
+[
+    {
+        "producto": "Papa",
+        "region": "Áncash",
+        "precio": 2.80,
+        "fecha": "2026-09-29",
+        "fuente": "DATOS DE DEMOSTRACIÓN"
+    },
+    {
+        "producto": "Papa",
+        "region": "Cajamarca",
+        "precio": 2.60,
+        "fecha": "2026-09-29",
+        "fuente": "DATOS DE DEMOSTRACIÓN"
+    },
+    {
+        "producto": "Papa",
+        "region": "Cusco",
+        "precio": 3.10,
+        "fecha": "2026-09-29",
+        "fuente": "DATOS DE DEMOSTRACIÓN"
+    },
+    {
+        "producto": "Papa",
+        "region": "Junín",
+        "precio": 2.90,
+        "fecha": "2026-09-29",
+        "fuente": "DATOS DE DEMOSTRACIÓN"
+    },
+    {
+        "producto": "Papa",
+        "region": "Puno",
+        "precio": 3.20,
+        "fecha": "2026-09-29",
+        "fuente": "DATOS DE DEMOSTRACIÓN"
+    },
+    {
+        "producto": "Papa",
+        "region": "San Martín",
+        "precio": 2.50,
+        "fecha": "2026-09-29",
+        "fuente": "DATOS DE DEMOSTRACIÓN"
+    },
+    {
+        "producto": "Papa",
+        "region": "Amazonas",
+        "precio": 2.70,
+        "fecha": "2026-09-29",
+        "fuente": "DATOS DE DEMOSTRACIÓN"
+    },
+    {
+        "producto": "Papa",
+        "region": "Piura",
+        "precio": 2.40,
+        "fecha": "2026-09-29",
+        "fuente": "DATOS DE DEMOSTRACIÓN"
+    },
+    {
+        "producto": "Papa",
+        "region": "Ica",
+        "precio": 3.00,
+        "fecha": "2026-09-29",
+        "fuente": "DATOS DE DEMOSTRACIÓN"
+    },
+    {
+        "producto": "Papa",
+        "region": "La Libertad",
+        "precio": 2.95,
+        "fecha": "2026-09-29",
+        "fuente": "DATOS DE DEMOSTRACIÓN"
+    }
+]
