@@ -1,288 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>AgroPrecios Perú</title>
-
-    <link rel="stylesheet" href="estilos.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroPrecios Perú</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-
 <body>
-
 <header>
-
-    <h1>🌱 AgroPrecios Perú</h1>
-
-    <p>
-        Consulta y compara precios agrícolas del Perú
-    </p>
-
+  <h1>🌱 AgroPrecios Perú</h1>
+  <p>Consulta y compara precios agrícolas registrados</p>
 </header>
-
-
 <main>
-
-    <!-- FILTROS -->
-
-    <section class="panel">
-
-        <h2>Consulta de precios</h2>
-
-        <div class="filtros">
-
-            <div>
-
-                <label for="producto">
-                    Producto
-                </label>
-
-                <select id="producto">
-
-                    <option value="Papa">
-                        Papa
-                    </option>
-
-                    <option value="Maíz">
-                        Maíz
-                    </option>
-
-                    <option value="Cebolla">
-                        Cebolla
-                    </option>
-
-                    <option value="Arroz">
-                        Arroz
-                    </option>
-
-                    <option value="Tomate">
-                        Tomate
-                    </option>
-
-                </select>
-
-            </div>
-
-
-            <div>
-
-                <label for="region">
-                    Región
-                </label>
-
-                <select id="region">
-
-                    <option value="">
-                        Todas las regiones
-                    </option>
-
-                    <option value="Áncash">
-                        Áncash
-                    </option>
-
-                    <option value="Cajamarca">
-                        Cajamarca
-                    </option>
-
-                    <option value="Cusco">
-                        Cusco
-                    </option>
-
-                    <option value="Junín">
-                        Junín
-                    </option>
-
-                    <option value="Puno">
-                        Puno
-                    </option>
-
-                    <option value="San Martín">
-                        San Martín
-                    </option>
-
-                    <option value="Amazonas">
-                        Amazonas
-                    </option>
-
-                    <option value="Piura">
-                        Piura
-                    </option>
-
-                    <option value="Ica">
-                        Ica
-                    </option>
-
-                    <option value="La Libertad">
-                        La Libertad
-                    </option>
-
-                </select>
-
-            </div>
-
-
-            <button onclick="consultarPrecios()">
-                Consultar
-            </button>
-
-        </div>
-
-    </section>
-
-
-    <!-- INDICADORES -->
-
-    <section class="indicadores">
-
-        <div class="card">
-
-            <h3>Precio promedio</h3>
-
-            <p id="promedio">
-                S/ 0.00
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <h3>Precio máximo</h3>
-
-            <p id="maximo">
-                S/ 0.00
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <h3>Precio mínimo</h3>
-
-            <p id="minimo">
-                S/ 0.00
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- GRÁFICO -->
-
-    <section class="panel">
-
-        <h2>Comparación de precios por región</h2>
-
-        <canvas id="grafico"></canvas>
-
-    </section>
-
-
-    <!-- TABLA -->
-
-    <section class="panel">
-
-        <h2>Tabla de precios</h2>
-
-        <div class="tabla-contenedor">
-
-            <table>
-
-                <thead>
-
-                    <tr>
-
-                        <th>Producto</th>
-
-                        <th>Región</th>
-
-                        <th>Precio</th>
-
-                        <th>Fecha</th>
-
-                        <th>Fuente</th>
-
-                    </tr>
-
-                </thead>
-
-                <tbody id="tabla">
-
-                </tbody>
-
-            </table>
-
-        </div>
-
-    </section>
-
-
-    <!-- ASISTENTE -->
-
-    <section class="panel">
-
-        <h2>🤖 Asistente AgroPrecios</h2>
-
-        <p>
-            Puedes preguntar sobre los precios registrados.
-        </p>
-
-        <div class="chat">
-
-            <input
-                type="text"
-                id="pregunta"
-                placeholder="Ejemplo: ¿Cuál es el precio más alto?"
-            >
-
-            <button onclick="preguntar()">
-                Preguntar
-            </button>
-
-        </div>
-
-        <p id="respuesta"></p>
-
-    </section>
-
-
-    <!-- INFORMACIÓN DE FUENTE -->
-
-    <section class="actualizacion">
-
-        <p>
-            <strong>Información utilizada:</strong>
-            último conjunto de datos disponible.
-        </p>
-
-        <p>
-            Fuente:
-            MIDAGRI
-        </p>
-
-    </section>
-
+  <section class="aviso">
+    <strong>Nota sobre los datos:</strong>
+    este archivo contiene registros de distintos años y algunos valores estimados o de referencia.
+    Revisa la fecha, el tipo y la fuente antes de comparar precios. “Sin dato” no equivale a precio cero.
+  </section>
+
+  <section class="panel">
+    <h2>Consulta de precios</h2>
+    <div class="filtros">
+      <div><label for="producto">Producto</label>
+        <select id="producto">
+          <option value="">Todos</option><option>Papa</option><option>Maíz</option>
+          <option>Cebolla</option><option>Arroz</option><option>Tomate</option>
+        </select>
+      </div>
+      <div><label for="region">Región</label>
+        <select id="region">
+          <option value="">Todas las regiones</option>
+          <option>Áncash</option><option>Cajamarca</option><option>Cusco</option>
+          <option>Junín</option><option>Puno</option><option>San Martín</option>
+          <option>Amazonas</option><option>Piura</option><option>Ica</option><option>La Libertad</option>
+        </select>
+      </div>
+      <div><label for="tipo">Tipo de precio</label>
+        <select id="tipo">
+          <option value="">Todos los tipos</option>
+          <option value="Productor (chacra)">Productor (chacra)</option>
+          <option value="Mayorista">Mayorista</option>
+        </select>
+      </div>
+      <div><label for="estadoFiltro">Estado del dato</label>
+        <select id="estadoFiltro">
+          <option value="">Todos los estados</option>
+          <option value="registrado">Registrado como real</option>
+          <option value="referencia">Referencia / estimación regional</option>
+          <option value="estimado">Estimado</option>
+          <option value="sin_dato">Sin dato</option>
+        </select>
+      </div>
+      <button id="btnConsultar" type="button">Consultar</button>
+    </div>
+  </section>
+
+  <section class="indicadores">
+    <div class="card"><h3>Promedio de precios numéricos</h3><p id="promedio">—</p></div>
+    <div class="card"><h3>Precio máximo</h3><p id="maximo">—</p></div>
+    <div class="card"><h3>Precio mínimo</h3><p id="minimo">—</p></div>
+  </section>
+
+  <section class="panel">
+    <h2>Comparación de precios</h2>
+    <p class="nota">El gráfico solo incluye registros con precio numérico. Si las fechas o los tipos difieren, la comparación puede no ser equivalente.</p>
+    <div class="grafico-contenedor"><canvas id="grafico"></canvas></div>
+  </section>
+
+  <section class="panel">
+    <h2>Registros de la base de datos</h2>
+    <div class="tabla-contenedor">
+      <table>
+        <thead><tr>
+          <th>Producto</th><th>Región</th><th>Precio</th><th>Unidad</th>
+          <th>Fecha / periodo</th><th>Tipo</th><th>Fuente</th><th>Estado</th>
+        </tr></thead>
+        <tbody id="tabla"></tbody>
+      </table>
+    </div>
+    <p id="contador" class="nota"></p>
+  </section>
+
+  <section class="panel">
+    <h2>🤖 Asistente AgroPrecios</h2>
+    <p>Pregunta por precios disponibles en los registros cargados.</p>
+    <div class="chat">
+      <input type="text" id="pregunta" placeholder="Ej.: ¿Cuál es el precio más alto de papa?">
+      <button id="btnPreguntar" type="button">Preguntar</button>
+    </div>
+    <p id="respuesta" aria-live="polite"></p>
+  </section>
+
+  <section class="actualizacion">
+    <p><strong>Fuente:</strong> las fuentes indicadas en cada registro del archivo de datos.</p>
+    <p>Los datos no se actualizan automáticamente con esta versión. La fecha mostrada es la incluida en cada registro.</p>
+  </section>
 </main>
-
-
-<footer>
-
-    <p>
-        AgroPrecios Perú © 2026
-    </p>
-
-</footer>
-
-
+<footer><p>AgroPrecios Perú © 2026</p></footer>
 <script src="script.js"></script>
-
 </body>
-
 </html>

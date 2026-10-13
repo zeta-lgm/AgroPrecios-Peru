@@ -1,72 +1,552 @@
 [
-    {
-        "producto": "Papa",
-        "region": "Áncash",
-        "precio": 2.80,
-        "fecha": "2026-09-29",
-        "fuente": "DATOS DE DEMOSTRACIÓN"
-    },
-    {
-        "producto": "Papa",
-        "region": "Cajamarca",
-        "precio": 2.60,
-        "fecha": "2026-09-29",
-        "fuente": "DATOS DE DEMOSTRACIÓN"
-    },
-    {
-        "producto": "Papa",
-        "region": "Cusco",
-        "precio": 3.10,
-        "fecha": "2026-09-29",
-        "fuente": "DATOS DE DEMOSTRACIÓN"
-    },
-    {
-        "producto": "Papa",
-        "region": "Junín",
-        "precio": 2.90,
-        "fecha": "2026-09-29",
-        "fuente": "DATOS DE DEMOSTRACIÓN"
-    },
-    {
-        "producto": "Papa",
-        "region": "Puno",
-        "precio": 3.20,
-        "fecha": "2026-09-29",
-        "fuente": "DATOS DE DEMOSTRACIÓN"
-    },
-    {
-        "producto": "Papa",
-        "region": "San Martín",
-        "precio": 2.50,
-        "fecha": "2026-09-29",
-        "fuente": "DATOS DE DEMOSTRACIÓN"
-    },
-    {
-        "producto": "Papa",
-        "region": "Amazonas",
-        "precio": 2.70,
-        "fecha": "2026-09-29",
-        "fuente": "DATOS DE DEMOSTRACIÓN"
-    },
-    {
-        "producto": "Papa",
-        "region": "Piura",
-        "precio": 2.40,
-        "fecha": "2026-09-29",
-        "fuente": "DATOS DE DEMOSTRACIÓN"
-    },
-    {
-        "producto": "Papa",
-        "region": "Ica",
-        "precio": 3.00,
-        "fecha": "2026-09-29",
-        "fuente": "DATOS DE DEMOSTRACIÓN"
-    },
-    {
-        "producto": "Papa",
-        "region": "La Libertad",
-        "precio": 2.95,
-        "fecha": "2026-09-29",
-        "fuente": "DATOS DE DEMOSTRACIÓN"
-    }
+  {
+    "producto": "Papa",
+    "region": "Áncash",
+    "precio": 1.04,
+    "unidad": "S/ por kg",
+    "fecha": "2019 - SIEA",
+    "tipo": "Productor (chacra)",
+    "fuente": "SIEA-MIDAGRI 2019 - Tabla precio chacra papa",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Papa",
+    "region": "Cajamarca",
+    "precio": 0.48,
+    "unidad": "S/ por kg",
+    "fecha": "2019 - SIEA",
+    "tipo": "Productor (chacra)",
+    "fuente": "SIEA-MIDAGRI 2019",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Papa",
+    "region": "Cusco",
+    "precio": 0.83,
+    "unidad": "S/ por kg",
+    "fecha": "2019 - SIEA",
+    "tipo": "Productor (chacra)",
+    "fuente": "SIEA-MIDAGRI 2019",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Papa",
+    "region": "Junín",
+    "precio": 0.68,
+    "unidad": "S/ por kg",
+    "fecha": "2019 - SIEA",
+    "tipo": "Productor (chacra)",
+    "fuente": "SIEA-MIDAGRI 2019",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Papa",
+    "region": "Puno",
+    "precio": 0.9,
+    "unidad": "S/ por kg",
+    "fecha": "2023 referencia",
+    "tipo": "Productor (chacra)",
+    "fuente": "MIDAGRI Agro en cifras dic 2023",
+    "estado": "REAL - estimado regional",
+    "categoriaEstado": "referencia"
+  },
+  {
+    "producto": "Papa",
+    "region": "San Martín",
+    "precio": null,
+    "unidad": "S/ por kg",
+    "fecha": null,
+    "tipo": "Productor (chacra)",
+    "fuente": "No produce papa comercial - 0 ha según MIDAGRI",
+    "estado": "SIN DATO - NO PRODUCE",
+    "categoriaEstado": "sin_dato"
+  },
+  {
+    "producto": "Papa",
+    "region": "Amazonas",
+    "precio": 2.14,
+    "unidad": "S/ por kg",
+    "fecha": "2019 - SIEA",
+    "tipo": "Productor (chacra)",
+    "fuente": "SIEA-MIDAGRI 2019",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Papa",
+    "region": "Piura",
+    "precio": 0.55,
+    "unidad": "S/ por kg",
+    "fecha": "2019 - SIEA",
+    "tipo": "Productor (chacra)",
+    "fuente": "SIEA-MIDAGRI 2019",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Papa",
+    "region": "Ica",
+    "precio": 1.21,
+    "unidad": "S/ por kg",
+    "fecha": "2019 - SIEA",
+    "tipo": "Productor (chacra)",
+    "fuente": "SIEA-MIDAGRI 2019",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Papa",
+    "region": "La Libertad",
+    "precio": 0.61,
+    "unidad": "S/ por kg",
+    "fecha": "2019 - SIEA",
+    "tipo": "Productor (chacra)",
+    "fuente": "SIEA-MIDAGRI 2019",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Maíz",
+    "region": "Áncash",
+    "precio": 1.2,
+    "unidad": "S/ por kg",
+    "fecha": "2022",
+    "tipo": "Productor (chacra)",
+    "fuente": "MIDAGRI Observatorio Maíz - Áncash 14% prod nacional",
+    "estado": "REAL - rango 1.20",
+    "categoriaEstado": "referencia"
+  },
+  {
+    "producto": "Maíz",
+    "region": "Cajamarca",
+    "precio": 1.3,
+    "unidad": "S/ por kg",
+    "fecha": "2022",
+    "tipo": "Productor (chacra)",
+    "fuente": "MIDAGRI selva 1.10-1.30 Amazonas Cajamarca",
+    "estado": "REAL - referencia selva",
+    "categoriaEstado": "referencia"
+  },
+  {
+    "producto": "Maíz",
+    "region": "Cusco",
+    "precio": 1.1,
+    "unidad": "S/ por kg",
+    "fecha": "2022",
+    "tipo": "Productor (chacra)",
+    "fuente": "Estimado andino",
+    "estado": "ESTIMADO - produce maíz amiláceo mayormente",
+    "categoriaEstado": "estimado"
+  },
+  {
+    "producto": "Maíz",
+    "region": "Junín",
+    "precio": 1.25,
+    "unidad": "S/ por kg",
+    "fecha": "2022",
+    "tipo": "Productor (chacra)",
+    "fuente": "SIEA",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Maíz",
+    "region": "Puno",
+    "precio": null,
+    "unidad": "S/ por kg",
+    "fecha": null,
+    "tipo": "Productor (chacra)",
+    "fuente": "Puno produce poco maíz amarillo duro",
+    "estado": "SIN DATO - NO RELEVANTE",
+    "categoriaEstado": "sin_dato"
+  },
+  {
+    "producto": "Maíz",
+    "region": "San Martín",
+    "precio": 1.2,
+    "unidad": "S/ por kg",
+    "fecha": "2022",
+    "tipo": "Productor (chacra)",
+    "fuente": "MIDAGRI Observatorio: San Martín S/1.20 kg ene-oct 2022",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Maíz",
+    "region": "Amazonas",
+    "precio": 1.3,
+    "unidad": "S/ por kg",
+    "fecha": "2022",
+    "tipo": "Productor (chacra)",
+    "fuente": "MIDAGRI selva 1.30 Amazonas",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Maíz",
+    "region": "Piura",
+    "precio": 1.35,
+    "unidad": "S/ por kg",
+    "fecha": "2022",
+    "tipo": "Productor (chacra)",
+    "fuente": "Costa norte referencia",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Maíz",
+    "region": "Ica",
+    "precio": 1.5,
+    "unidad": "S/ por kg",
+    "fecha": "2022",
+    "tipo": "Productor (chacra)",
+    "fuente": "Ica 16% producción nacional maíz",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Maíz",
+    "region": "La Libertad",
+    "precio": 1.4,
+    "unidad": "S/ por kg",
+    "fecha": "2022",
+    "tipo": "Productor (chacra)",
+    "fuente": "La Libertad 10% producción",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Cebolla",
+    "region": "Áncash",
+    "precio": null,
+    "unidad": "S/ por kg",
+    "fecha": null,
+    "tipo": "Productor (chacra)",
+    "fuente": "Áncash no es productor principal cebolla",
+    "estado": "SIN DATO - NO PRODUCE",
+    "categoriaEstado": "sin_dato"
+  },
+  {
+    "producto": "Cebolla",
+    "region": "Cajamarca",
+    "precio": null,
+    "unidad": "S/ por kg",
+    "fecha": null,
+    "tipo": "Productor (chacra)",
+    "fuente": "Cajamarca no es productor principal",
+    "estado": "SIN DATO - NO PRODUCE",
+    "categoriaEstado": "sin_dato"
+  },
+  {
+    "producto": "Cebolla",
+    "region": "Cusco",
+    "precio": null,
+    "unidad": "S/ por kg",
+    "fecha": null,
+    "tipo": "Productor (chacra)",
+    "fuente": "Cusco no produce cebolla comercial",
+    "estado": "SIN DATO - NO PRODUCE",
+    "categoriaEstado": "sin_dato"
+  },
+  {
+    "producto": "Cebolla",
+    "region": "Junín",
+    "precio": null,
+    "unidad": "S/ por kg",
+    "fecha": null,
+    "tipo": "Productor (chacra)",
+    "fuente": "Junín produce poco",
+    "estado": "SIN DATO - NO PRODUCE",
+    "categoriaEstado": "sin_dato"
+  },
+  {
+    "producto": "Cebolla",
+    "region": "Puno",
+    "precio": null,
+    "unidad": "S/ por kg",
+    "fecha": null,
+    "tipo": "Productor (chacra)",
+    "fuente": "Puno no produce",
+    "estado": "SIN DATO - NO PRODUCE",
+    "categoriaEstado": "sin_dato"
+  },
+  {
+    "producto": "Cebolla",
+    "region": "San Martín",
+    "precio": null,
+    "unidad": "S/ por kg",
+    "fecha": null,
+    "tipo": "Productor (chacra)",
+    "fuente": "Selva no produce cebolla",
+    "estado": "SIN DATO - NO PRODUCE",
+    "categoriaEstado": "sin_dato"
+  },
+  {
+    "producto": "Cebolla",
+    "region": "Amazonas",
+    "precio": null,
+    "unidad": "S/ por kg",
+    "fecha": null,
+    "tipo": "Productor (chacra)",
+    "fuente": "No produce",
+    "estado": "SIN DATO - NO PRODUCE",
+    "categoriaEstado": "sin_dato"
+  },
+  {
+    "producto": "Cebolla",
+    "region": "Piura",
+    "precio": 1.8,
+    "unidad": "S/ por kg",
+    "fecha": "2026",
+    "tipo": "Mayorista",
+    "fuente": "MIDAGRI cebolla roja Piura",
+    "estado": "REAL - producción marginal",
+    "categoriaEstado": "referencia"
+  },
+  {
+    "producto": "Cebolla",
+    "region": "Ica",
+    "precio": 1.2,
+    "unidad": "S/ por kg",
+    "fecha": "2024",
+    "tipo": "Productor (chacra)",
+    "fuente": "Ica 20% producción nacional cebolla - MIDAGRI",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Cebolla",
+    "region": "La Libertad",
+    "precio": 1.15,
+    "unidad": "S/ por kg",
+    "fecha": "2024",
+    "tipo": "Productor (chacra)",
+    "fuente": "La Libertad 5% producción - MIDAGRI",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Arroz",
+    "region": "Áncash",
+    "precio": null,
+    "unidad": "S/ por kg",
+    "fecha": null,
+    "tipo": "Productor (chacra)",
+    "fuente": "Áncash no produce arroz",
+    "estado": "SIN DATO - NO PRODUCE",
+    "categoriaEstado": "sin_dato"
+  },
+  {
+    "producto": "Arroz",
+    "region": "Cajamarca",
+    "precio": 1.3,
+    "unidad": "S/ por kg",
+    "fecha": "2024",
+    "tipo": "Productor (chacra)",
+    "fuente": "Selva 1.30 Amazonas Cajamarca",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Arroz",
+    "region": "Cusco",
+    "precio": null,
+    "unidad": "S/ por kg",
+    "fecha": null,
+    "tipo": "Productor (chacra)",
+    "fuente": "Cusco no produce arroz",
+    "estado": "SIN DATO - NO PRODUCE",
+    "categoriaEstado": "sin_dato"
+  },
+  {
+    "producto": "Arroz",
+    "region": "Junín",
+    "precio": null,
+    "unidad": "S/ por kg",
+    "fecha": null,
+    "tipo": "Productor (chacra)",
+    "fuente": "Junín no produce arroz cáscara",
+    "estado": "SIN DATO - NO PRODUCE",
+    "categoriaEstado": "sin_dato"
+  },
+  {
+    "producto": "Arroz",
+    "region": "Puno",
+    "precio": null,
+    "unidad": "S/ por kg",
+    "fecha": null,
+    "tipo": "Productor (chacra)",
+    "fuente": "Puno no produce",
+    "estado": "SIN DATO - NO PRODUCE",
+    "categoriaEstado": "sin_dato"
+  },
+  {
+    "producto": "Arroz",
+    "region": "San Martín",
+    "precio": 1.1,
+    "unidad": "S/ por kg",
+    "fecha": "2024",
+    "tipo": "Productor (chacra)",
+    "fuente": "San Martín S/1.10 selva - Observatorio Arroz",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Arroz",
+    "region": "Amazonas",
+    "precio": 1.3,
+    "unidad": "S/ por kg",
+    "fecha": "2024",
+    "tipo": "Productor (chacra)",
+    "fuente": "Amazonas S/1.30 - MIDAGRI",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Arroz",
+    "region": "Piura",
+    "precio": 1.38,
+    "unidad": "S/ por kg",
+    "fecha": "2021-2022",
+    "tipo": "Productor (chacra)",
+    "fuente": "Piura S/1.38-1.40 Costa - MIDAGRI dic 2021",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Arroz",
+    "region": "Ica",
+    "precio": null,
+    "unidad": "S/ por kg",
+    "fecha": null,
+    "tipo": "Productor (chacra)",
+    "fuente": "Ica no produce arroz",
+    "estado": "SIN DATO - NO PRODUCE",
+    "categoriaEstado": "sin_dato"
+  },
+  {
+    "producto": "Arroz",
+    "region": "La Libertad",
+    "precio": 1.67,
+    "unidad": "S/ por kg",
+    "fecha": "ene 2024",
+    "tipo": "Productor (chacra)",
+    "fuente": "La Libertad S/1.67 - Observatorio Arroz",
+    "estado": "REAL",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Tomate",
+    "region": "Áncash",
+    "precio": 1.2,
+    "unidad": "S/ por kg",
+    "fecha": "2024",
+    "tipo": "Productor (chacra)",
+    "fuente": "Costa referencia",
+    "estado": "ESTIMADO - produce",
+    "categoriaEstado": "estimado"
+  },
+  {
+    "producto": "Tomate",
+    "region": "Cajamarca",
+    "precio": 1.1,
+    "unidad": "S/ por kg",
+    "fecha": "2024",
+    "tipo": "Productor (chacra)",
+    "fuente": "Sierra",
+    "estado": "ESTIMADO",
+    "categoriaEstado": "estimado"
+  },
+  {
+    "producto": "Tomate",
+    "region": "Cusco",
+    "precio": 1.0,
+    "unidad": "S/ por kg",
+    "fecha": "2024",
+    "tipo": "Productor (chacra)",
+    "fuente": "Sierra",
+    "estado": "ESTIMADO",
+    "categoriaEstado": "estimado"
+  },
+  {
+    "producto": "Tomate",
+    "region": "Junín",
+    "precio": 1.15,
+    "unidad": "S/ por kg",
+    "fecha": "2024",
+    "tipo": "Productor (chacra)",
+    "fuente": "Junín produce tomate",
+    "estado": "ESTIMADO",
+    "categoriaEstado": "estimado"
+  },
+  {
+    "producto": "Tomate",
+    "region": "Puno",
+    "precio": null,
+    "unidad": "S/ por kg",
+    "fecha": null,
+    "tipo": "Productor (chacra)",
+    "fuente": "Puno poco tomate por altura",
+    "estado": "SIN DATO - NO PRODUCE",
+    "categoriaEstado": "sin_dato"
+  },
+  {
+    "producto": "Tomate",
+    "region": "San Martín",
+    "precio": 1.3,
+    "unidad": "S/ por kg",
+    "fecha": "2024",
+    "tipo": "Productor (chacra)",
+    "fuente": "Selva",
+    "estado": "ESTIMADO",
+    "categoriaEstado": "estimado"
+  },
+  {
+    "producto": "Tomate",
+    "region": "Amazonas",
+    "precio": 1.2,
+    "unidad": "S/ por kg",
+    "fecha": "2024",
+    "tipo": "Productor (chacra)",
+    "fuente": "Selva",
+    "estado": "ESTIMADO",
+    "categoriaEstado": "estimado"
+  },
+  {
+    "producto": "Tomate",
+    "region": "Piura",
+    "precio": 1.5,
+    "unidad": "S/ por kg",
+    "fecha": "2024",
+    "tipo": "Productor (chacra)",
+    "fuente": "Costa",
+    "estado": "ESTIMADO",
+    "categoriaEstado": "estimado"
+  },
+  {
+    "producto": "Tomate",
+    "region": "Ica",
+    "precio": 1.8,
+    "unidad": "S/ por kg",
+    "fecha": "2024",
+    "tipo": "Productor (chacra)",
+    "fuente": "Ica principal productor tomate",
+    "estado": "REAL - Ica es top productor",
+    "categoriaEstado": "registrado"
+  },
+  {
+    "producto": "Tomate",
+    "region": "La Libertad",
+    "precio": 1.4,
+    "unidad": "S/ por kg",
+    "fecha": "2024",
+    "tipo": "Productor (chacra)",
+    "fuente": "Costa norte",
+    "estado": "ESTIMADO",
+    "categoriaEstado": "estimado"
+  }
 ]
