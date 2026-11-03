@@ -4,12 +4,13 @@ header{background:#1f6f43;color:#fff;text-align:center;padding:30px 20px}
 header h1{margin:0 0 10px}
 main{width:92%;max-width:1200px;margin:28px auto}
 .panel,.card{background:#fff;padding:22px;margin-bottom:22px;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,.08)}
-.aviso{padding:15px 18px;margin-bottom:22px;border-left:5px solid #b7791f;background:#fff8e8;border-radius:7px;line-height:1.5}
 .filtros{display:flex;gap:14px;align-items:end;flex-wrap:wrap}
 .filtros div{display:flex;flex-direction:column;gap:6px;min-width:150px}
 select,input{padding:10px;border:1px solid #c9d2cc;border-radius:7px;background:#fff;color:#26352b}
 button{padding:11px 18px;border:0;border-radius:7px;background:#287d4c;color:#fff;cursor:pointer}
 button:hover{opacity:.9}
+button:disabled{opacity:.6;cursor:wait}
+#estadoActualizacion:empty{display:none}
 .indicadores{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:22px}
 .card{text-align:center;margin:0}
 .card p{font-size:24px;font-weight:bold}

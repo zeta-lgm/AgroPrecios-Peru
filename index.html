@@ -13,47 +13,29 @@
   <p>Consulta y compara precios agrícolas registrados</p>
 </header>
 <main>
-  <section class="aviso">
-    <strong>Nota sobre los datos:</strong>
-    este archivo contiene registros de distintos años y algunos valores estimados o de referencia.
-    Revisa la fecha, el tipo y la fuente antes de comparar precios. “Sin dato” no equivale a precio cero.
-  </section>
-
   <section class="panel">
     <h2>Consulta de precios</h2>
     <div class="filtros">
       <div><label for="producto">Producto</label>
-        <select id="producto">
-          <option value="">Todos</option><option>Papa</option><option>Maíz</option>
-          <option>Cebolla</option><option>Arroz</option><option>Tomate</option>
-        </select>
+        <select id="producto"><option value="">Todos</option></select>
       </div>
       <div><label for="region">Región</label>
-        <select id="region">
-          <option value="">Todas las regiones</option>
-          <option>Áncash</option><option>Cajamarca</option><option>Cusco</option>
-          <option>Junín</option><option>Puno</option><option>San Martín</option>
-          <option>Amazonas</option><option>Piura</option><option>Ica</option><option>La Libertad</option>
-        </select>
+        <select id="region"><option value="">Todas las regiones</option></select>
       </div>
       <div><label for="tipo">Tipo de precio</label>
-        <select id="tipo">
-          <option value="">Todos los tipos</option>
-          <option value="Productor (chacra)">Productor (chacra)</option>
-          <option value="Mayorista">Mayorista</option>
-        </select>
+        <select id="tipo"><option value="">Todos los tipos</option></select>
       </div>
       <div><label for="estadoFiltro">Estado del dato</label>
         <select id="estadoFiltro">
           <option value="">Todos los estados</option>
-          <option value="registrado">Registrado como real</option>
-          <option value="referencia">Referencia / estimación regional</option>
-          <option value="estimado">Estimado</option>
+          <option value="registrado">Con precio registrado</option>
           <option value="sin_dato">Sin dato</option>
         </select>
       </div>
       <button id="btnConsultar" type="button">Consultar</button>
+      <button id="btnActualizar" type="button">Actualizar precios</button>
     </div>
+    <p id="estadoActualizacion" class="nota" aria-live="polite"></p>
   </section>
 
   <section class="indicadores">
@@ -64,7 +46,7 @@
 
   <section class="panel">
     <h2>Comparación de precios</h2>
-    <p class="nota">El gráfico solo incluye registros con precio numérico. Si las fechas o los tipos difieren, la comparación puede no ser equivalente.</p>
+    <p class="nota">El gráfico compara el precio mayorista y minorista de cada variedad por región, solo con registros que tienen precio. Revisa la fecha en la tabla: puede variar entre regiones.</p>
     <div class="grafico-contenedor"><canvas id="grafico"></canvas></div>
   </section>
 
@@ -86,15 +68,15 @@
     <h2>🤖 Asistente AgroPrecios</h2>
     <p>Pregunta por precios disponibles en los registros cargados.</p>
     <div class="chat">
-      <input type="text" id="pregunta" placeholder="Ej.: ¿Cuál es el precio más alto de papa?">
+      <input type="text" id="pregunta" placeholder="Ej.: ¿Cuál es el precio mayorista más alto de papa en Puno?">
       <button id="btnPreguntar" type="button">Preguntar</button>
     </div>
     <p id="respuesta" aria-live="polite"></p>
   </section>
 
   <section class="actualizacion">
-    <p><strong>Fuente:</strong> las fuentes indicadas en cada registro del archivo de datos.</p>
-    <p>Los datos no se actualizan automáticamente con esta versión. La fecha mostrada es la incluida en cada registro.</p>
+    <p><strong>Fuente:</strong> <a href="http://sistemas.midagri.gob.pe/sisap/portal2/ciudades/" target="_blank" rel="noopener">SISAP – MIDAGRI</a>, mercados mayoristas y minoristas.</p>
+    <p>Usa el botón «Actualizar precios» para traer los datos más recientes del SISAP (requiere Laragon encendido en este equipo). La fecha de cada registro es la de su último reporte.</p>
   </section>
 </main>
 <footer><p>AgroPrecios Perú © 2026</p></footer>
